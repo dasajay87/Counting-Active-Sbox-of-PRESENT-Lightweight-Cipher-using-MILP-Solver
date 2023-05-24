@@ -1,0 +1,30 @@
+I hope, you have successfully install Gurobi Software in Ubuntu
+
+//PRESENT LightWeight Cipher
+I have attached the c program file "present.c". Just run it and dump the output at "present.lp" file.
+Here is the commands
+
+	gcc present.c
+	./a.out>present.lp
+
+You can create .lp file (MILP code) for any number of ROUNDS written in C program for PRESENT.
+Just change number of ROUNDS written in c program and run the file.
+
+
+//start gurobi
+
+
+gurobi.sh
+
+Then open new terminal and run the .lp file you have created.
+
+//To Run .lp file (here we can only see the final output only).
+ gurobi_cl present.lp
+ 
+ //To get all solution from .lp file
+ gurobi_cl ResultFile=present.sol present.lp
+
+
+For any doubts, please feel free to contact me. I will feel happy to share knowledge with you.
+
+Email: ajaykd@iitbhilai.ac.in
